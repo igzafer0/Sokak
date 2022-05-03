@@ -13,7 +13,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.newsViewHolder>() {
 
     private val callback = object : DiffUtil.ItemCallback<Article>() {
         override fun areItemsTheSame(oldItem: Article, newItem: Article): Boolean {
-            return oldItem.url == newItem.url
+            return oldItem.description == newItem.description
         }
 
         override fun areContentsTheSame(oldItem: Article, newItem: Article): Boolean {
@@ -21,7 +21,12 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.newsViewHolder>() {
         }
 
     }
+    private var article = ArrayList<Article>()
     val differ = AsyncListDiffer(this, callback)
+    fun setList(articles: List<Article>){
+
+        article.addAll(articles)
+    }
 
     inner class newsViewHolder(val binding: NewsRowBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -43,12 +48,12 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.newsViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: newsViewHolder, position: Int) {
-        val article = differ.currentList[position]
+        val article = article[position]
         holder.bind(article)
 
     }
 
     override fun getItemCount(): Int {
-        return differ.currentList.size
+        return article.size
     }
 }
