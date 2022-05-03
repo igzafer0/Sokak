@@ -26,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel=ViewModelProvider(this,factory).get(NewsViewModel::class.java)
+        viewModel= ViewModelProvider(this,factory)[NewsViewModel::class.java]
 
     }
 }
