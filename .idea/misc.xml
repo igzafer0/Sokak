@@ -3,10 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/drawable/corner_radius.xml" value="0.1395" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/drawable/ic_bookmark.xml" value="0.137" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/drawable/ic_search.xml" value="0.2265" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/drawable/ic_share.xml" value="0.1395" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/drawable/round_outline.xml" value="0.2265" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout-v28/news_row.xml" value="0.1265625" />
         <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/activity_home.xml" value="0.1265625" />
         <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/activity_main.xml" value="0.1265625" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/fragment_home.xml" value="0.24101068999028183" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/fragment_info.xml" value="0.12916666666666668" />
         <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/fragment_news.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/news_row.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/fragment_saved.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/layout/news_row.xml" value="0.6" />
+        <entry key="..\:/Users/Zafer/AndroidStudioProjects/Sokak/app/src/main/res/menu/toolbar.xml" value="0.1265625" />
       </map>
     </option>
   </component>

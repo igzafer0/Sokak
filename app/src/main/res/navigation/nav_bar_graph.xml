@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.igzafer.sokak.presentation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.igzafer.sokak.presentation.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.igzafer.sokak.presentation.SavedFragment"
+        tools:layout="@layout/fragment_saved"
+        android:label="SavedFragment" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.igzafer.sokak.presentation.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <argument
+            android:name="selected_article"
+            app:argType="com.igzafer.sokak.data.model.Article" />
+        <action
+            android:id="@+id/action_infoFragment_to_homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@+id/homeFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true"
+            />
+    </fragment>
+</navigation>

@@ -8,8 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="list_text">#FFFFFFFF</color>
-    <color name="list_background">#2F2C2A</color>
-    <color name="layout_background">#000000</color>
+    <color name="lightBlack">#2C2C2C</color>
+    <color name="dark">#1B1B1B</color>
+    <color name="success">#81C14B</color>
+    <color name="inactive">#bdbdbd</color>
+    <color name="error">#FF1717</color>
 
 </resources>

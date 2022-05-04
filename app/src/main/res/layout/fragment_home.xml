@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    tools:context=".presentation.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/dark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolBarTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gilroylight"
+            android:text="Çarşamba, Mayıs 4"
+
+            android:textColor="@color/inactive"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/toolBarFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolBarTarih"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gilroybold"
+            android:lineHeight="20dp"
+            android:text="Günlük Haberler"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_search"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20sp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/navigation"
+        android:background="@color/dark"
+        android:layout_below="@id/toolBar"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/bugunTw"
+                android:layout_alignEnd="@id/bugunTw"
+                android:layout_alignBottom="@id/bugunTw"
+                android:layout_alignTop="@id/bugunTw"
+                android:clipToOutline="true"
+                android:alpha="0.3"
+                android:foreground="@drawable/corner_radius"
+                android:id="@+id/haberBg"
+
+                />
+
+            <TextView
+                android:id="@+id/bugunTw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroybold"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textSize="12sp"
+                android:text="Haberler"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/kaydedilenlerTw"
+                android:layout_alignEnd="@id/kaydedilenlerTw"
+                android:layout_alignBottom="@id/kaydedilenlerTw"
+                android:layout_alignTop="@id/kaydedilenlerTw"
+                android:clipToOutline="true"
+                android:id="@+id/kayitBg"
+
+                android:alpha="0.3"
+                android:visibility="invisible"
+                android:foreground="@drawable/corner_radius"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Kaydedilenler"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:id="@+id/kaydedilenlerTw"
+                android:fontFamily="@font/gilroybold"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"
+        android:layout_below="@id/navigation"
+        />
+
+
+
+</RelativeLayout>
