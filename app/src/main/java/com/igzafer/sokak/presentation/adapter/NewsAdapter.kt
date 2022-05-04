@@ -54,13 +54,22 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.newsViewHolder>() {
                     it(article)
                 }
             }
+            binding.shareIm.setOnClickListener{
+                onShareClickListener?.let {
+                    it(article)
+                }
+            }
         }
 
     }
 
     private var onItemClickListener: ((Article) -> Unit)? = null
+    private var onShareClickListener: ((Article) -> Unit)? = null
     fun setOnItemClickListener(listener: (Article) -> Unit) {
         onItemClickListener = listener
+    }
+    fun setOnShareClickListener(listener: (Article) -> Unit){
+        onShareClickListener=listener
     }
 
 
